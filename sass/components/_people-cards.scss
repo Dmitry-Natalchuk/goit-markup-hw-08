@@ -1,0 +1,73 @@
+.people {
+    background: #f5f4fa;
+}
+
+.people .name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.people .list {
+    display: flex;
+}
+
+.people-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.people-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+}
+.links-people {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.people-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover{
+        background-color: var(--accent-color);
+    }
+}
+
+.links {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .people-info:hover &,
+    .people-info:focus & {
+        fill: var(--main-color);
+    }
+}
+.people-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.prof {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--primary-text-color);
+}

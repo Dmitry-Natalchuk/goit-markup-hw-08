@@ -1,0 +1,32 @@
+body {
+    font-family: var(--primary-font-famili);
+    font-size: 14px;
+    font-style: normal;
+    color: var(--secondary-text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
