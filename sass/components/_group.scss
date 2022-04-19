@@ -8,7 +8,18 @@
 }
 
 .info .list {
-    display: flex;
+
+    @media screen and (min-width:480px) {
+    width: 480px;
+    }
+    @media screen and (min-width:768px) {
+        width: 768px;
+        display: flex;
+       flex-wrap: wrap;
+    }
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+    }
 }
 
 .list-info:not(:last-child) {

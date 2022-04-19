@@ -55,11 +55,28 @@ ul {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .top-bottom {
@@ -81,6 +98,12 @@ ul {
 .header__list {
   display: flex;
   margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .header__list {
+    display: none;
+  }
 }
 
 .header__contact {
@@ -109,17 +132,41 @@ ul {
 }
 
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
   max-width: 1600px;
-  margin: 0 auto;
-  height: 600px;
   background: var(--secondary-text-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__box {
+    padding-bottom: 118px;
+  }
 }
 
 .hero__text {
@@ -130,6 +177,12 @@ ul {
   line-height: 1.4;
   text-align: center;
   color: var(--main-color);
+}
+
+@media screen and (max-width: 768px) {
+  .hero__text {
+    padding-top: 118px;
+  }
 }
 
 .hero__button {
@@ -192,7 +245,7 @@ ul {
   margin-bottom: 9px;
 }
 
-.address a {
+.adres-text {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -608,6 +661,12 @@ ul {
   line-height: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .nanavigation {
+    display: none;
+  }
+}
+
 .nanavigation__list {
   position: relative;
   display: inline-block;
@@ -657,6 +716,18 @@ ul {
 
 .work {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    width: 1200px;
+  }
 }
 
 .work .list {
@@ -769,8 +840,24 @@ ul {
   background: #f5f4fa;
 }
 
-.info .list {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .info .list {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info .list {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info .list {
+    width: 1200px;
+  }
 }
 
 .list-info:not(:last-child) {
