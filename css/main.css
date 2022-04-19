@@ -80,8 +80,15 @@ ul {
 }
 
 .top-bottom {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .top-bottom {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .header {
@@ -137,7 +144,7 @@ ul {
   background: var(--secondary-text-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 }
 
 @media screen and (min-width: 480px) {
@@ -648,6 +655,12 @@ ul {
   color: var(--secondary-text-color);
 }
 
+@media screen and (min-width: 480px) {
+  .title-info {
+    text-align: center;
+  }
+}
+
 .title-section {
   font-weight: bold;
   font-size: 36px;
@@ -707,11 +720,16 @@ ul {
 }
 
 .paragraf-info {
-  width: 270px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .paragraf-info {
+    width: 450px;
+  }
 }
 
 .work {
@@ -769,8 +787,11 @@ ul {
   line-height: 1.2;
 }
 
-.people .list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .people .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .people-name {
@@ -782,10 +803,19 @@ ul {
   background: #fff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  /* &:not(:last-child) {
+            margin-right: 30px;
+        } */
 }
 
 .people-card:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .people-card-img {
+    width: 450px;
+  }
 }
 
 .links-people {
@@ -841,6 +871,12 @@ ul {
 }
 
 @media screen and (min-width: 480px) {
+  .group {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .info .list {
     width: 480px;
   }
@@ -860,30 +896,39 @@ ul {
   }
 }
 
-.list-info:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .list-info:not(:last-child) {
+    padding-bottom: 30px;
+  }
 }
 
 .group-client {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background: #fff;
 }
 
 .client {
-  width: 170px;
-  height: 92px;
   border: 1px solid;
   border-color: #afb1b8;
   border-radius: 4px;
+  margin-bottom: 30px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*   &:not(:last-child){
+        margin-right: 30px;
+    }*/
 }
 
 .client:focus, .client:hover {
   border-color: var(--accent-color);
 }
 
-.client:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .client {
+    width: 210px;
+    height: 92px;
+  }
 }
 
 .clients-icon {
@@ -900,7 +945,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  /* width: 170px; */
   height: 92px;
 }
 
