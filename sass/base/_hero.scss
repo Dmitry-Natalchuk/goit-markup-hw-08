@@ -1,32 +1,16 @@
 .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     max-width: 1600px;
+    margin: 0 auto;
+    height: 600px;
     background: var(--secondary-text-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/bg.jpg);
     background-size: cover;
-    background-position: center center;
-
-    @media screen and (min-width:480px) {
-        width: 480px;
-    }
-    @media screen and (min-width:768px) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 768px;
-        height: 400px;
-    }
-    @media screen and (min-width:1200px) {
-        width: 1200px;
-        height: 600px;
-    }
-}
-
-.hero__box {
-    @media screen and (max-width:767px) {
-        padding-bottom: 118px;
-    }
+    background-position: center;
 }
 
 .hero__text {
@@ -37,11 +21,6 @@
     line-height: 1.4;
     text-align: center;
     color: var(--main-color);
-
-    @media screen and (max-width:768px) {
-        padding-top: 118px;
-        
-    }
 }
 .hero__button {
     display: flex;
