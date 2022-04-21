@@ -1,10 +1,19 @@
 .work {
-    padding-bottom: 94px;
+    @media screen and (max-width: $max-tablet) {
+        display: none;
+    }
+
+    @media screen and (min-width: $desktop) {       
+         padding-bottom: 94px;
+    }
 }
 
 .work .list {
-    display: flex;
-    margin-top: 50px;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        margin-top: 50px;
+    }
 }
 .img-box {
     position: relative;

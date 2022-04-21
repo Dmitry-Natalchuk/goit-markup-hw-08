@@ -1,11 +1,15 @@
 .studio {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 94px;
     font-family: var(--secondary-font-famili);
     font-weight: bold;
     font-size: 26px;
     line-height: 1.2;
+
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 94px;
+    }
 }
 
 .web {

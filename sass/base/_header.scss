@@ -2,22 +2,38 @@
 .header {
     border-bottom: 1px solid;
     border-color: #eeeeee;
-    height: 80px;
+    height: 60px;
+
+    @media screen and (min-width: $desktop) {
+        height: 80px;
+    }
 }
 .header__box{
-    display: flex;
-    align-items: center;
+    
+    @media screen and (max-width: $max-mobile) {
+        padding-top: 16px;
+    }
+
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header__list {
-    display: flex;
-    margin-left: auto;
+
+    @media screen and(max-width:$max-mobile) {
+        display: none;
+    
+    }
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        margin-left: auto;
+    }
 }
 
 .header__contact {
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -27,6 +43,12 @@
     &:focus,
     &:hover {
       color: var(--accent-color);
+    }
+
+    @media screen and (min-width: $desktop) {
+       display: flex;
+       align-items: center;
+       margin-right: 50px;
     }
 }
 
