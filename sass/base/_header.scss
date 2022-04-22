@@ -11,6 +11,9 @@
 .header__box{
     
     @media screen and (max-width: $max-mobile) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding-top: 16px;
     }
 

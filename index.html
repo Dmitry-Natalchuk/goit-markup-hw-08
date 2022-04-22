@@ -18,7 +18,7 @@
       <header class="header">
         <div class="container header__box">
          <a class="studio" href=""><span class="web">Web</span>Studio</a>
-           <nav class="nanavigation">
+          <!--  <nav class="nanavigation">
              <ul class="nanavigation__item">
                 <li class="nanavigation__list">
                     <a class="nanavigation__info nanavigation__line" href="./index.html">Студия</a>
@@ -30,8 +30,22 @@
                     <a class="nanavigation__info" href="">Контакты</a>
                 </li> 
              </ul>
-           </nav>
-            <ul class="header__list">
+           </nav> -->
+           <button type="button" class="mobile-menu-btn" data-menu-open>
+              <svg class="mobile-menu-btn__icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-burger"></use>
+              </svg>
+           </button>
+          <div class="mobile-menu" data-menu>
+              <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                  <svg class="mobile-menu__close-icon" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+          </div>
+           <!--  <ul class="header__list">
                <li>
                 <a class="header__contact" href="mailto:info@devstudio.com">
                   <svg class="header__icon" width="16" height="12">
@@ -48,7 +62,7 @@
                   +38 096 111 11 11
                 </a>
                </li>
-            </ul>
+            </ul> -->
         </div>    
       </header>
       <main>
@@ -468,5 +482,6 @@
             </div>
           </div>
           <script src="./js/modal.js"></script>
+          <script src="./js/menu.js"></script>
   </body>
 </html>
