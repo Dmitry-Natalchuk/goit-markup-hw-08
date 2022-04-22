@@ -168,4 +168,9 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #ffffff;
+
+    @media screen and (max-width:$max-mobile){
+        padding-top: 60px;
+        
+    }
 }

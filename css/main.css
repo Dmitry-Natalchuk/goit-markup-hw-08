@@ -403,6 +403,12 @@ ul {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-info {
+    padding-top: 60px;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;
