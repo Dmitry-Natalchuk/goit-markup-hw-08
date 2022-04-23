@@ -585,9 +585,7 @@ ul {
 }
 
 .contract-chek {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
 }
 
 .contract-chek::before {
@@ -600,6 +598,14 @@ ul {
   margin-right: 7px;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .contract-chek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .icon-chekbox:checked + .contract-chek::before {
