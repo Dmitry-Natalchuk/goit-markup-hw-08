@@ -111,7 +111,7 @@
          <section class="info top-bottom">
         <div class="container">
              <h2 class="visually-hidden ">Особенности</h2>
-          <ul class="list">
+          <ul class="list group-list">
             <li class="list-info">
               <div class="group">
                 <svg class="icon" width="70" height="70">
@@ -176,9 +176,16 @@
             <ul class="list">
                 <li class="people-card">
                   <picture>
-                    <source
-                    />
-                   <img src="./images/photo-mobile/person1-mobile-450.jpg" alt="Игорь Демьяненко">
+
+                    <source srcset="./images/photo-mobile/person1-mobile-450.webp 1x,
+                                    ./images/photo-mobile/person1-mobile-450@2x.webp 2x"
+                                    media="(max-width:767px"
+                                    type="image/webp" />
+
+                    <source srcset="./images/photo-mobile/person1-mobile-450.jpg 1x, 
+                            ./images/photo-mobile/person1-mobile-450@2x.jpg 2x"
+                              media="(max-width: 767px)"/>
+                   <img src="./images/photo-mobile/person1-mobile-450.jpg" alt="Игорь Демьяненко" />
                   </picture>
                   <div class="people-name">
                    <h3 class="name">Игорь Демьяненко</h3>
@@ -216,7 +223,18 @@
                   </div>
                 </li>
                 <li class="people-card">
-                    <img src="./images/photo-mobile/person2-mobile-450.jpg" alt="ОльгРепина ">
+                  <picture>
+
+                    <source srcset="./images/photo-mobile/person2-mobile-450.webp 1x,
+                                    ./images/photo-mobile/person2-mobile-450@2x.webp 2x" 
+                                    media="(max-width:767px"
+                                    type="image/webp" />
+
+                      <source srcset="./images/photo-mobile/person2-mobile-450.jpg 1x, 
+                                        ./images/photo-mobile/person2-mobile-450@2x.jpg 2x"
+                                         media="(max-width: 767px)" />
+                    <img src="./images/photo-mobile/person2-mobile-450.jpg" alt="ОльгРепина" />
+                </picture>
                   <div class="people-name">
                     <h3 class="name">Ольга Репина</h3>
                     <p class="prof" lang="en">Frontend Developer</p>
@@ -253,7 +271,18 @@
                   </div> 
                 </li>
                 <li class="people-card">
-                    <img src="./images/photo-mobile/person3-mobile-450.jpg"  alt="Николай Тарасов"> 
+                  <picture>
+
+                    <source srcset="./images/photo-mobile/person3-mobile-450.webp 1x,
+                                    ./images/photo-mobile/person3-mobile-450@2x.webp 2x" 
+                                     media="(max-width:767px"
+                                     type="image/webp" />
+
+                    <source srcset="./images/photo-mobile/person3-mobile-450.jpg 1x, 
+                                   ./images/photo-mobile/person3-mobile-450@2x.jpg 2x"
+                                    media="(max-width: 767px)" />
+                    <img src="./images/photo-mobile/person3-mobile-450.jpg"  alt="Николай Тарасов" />
+                </picture> 
                   <div class="people-name">
                     <h3 class="name">Николай Тарасов</h3> 
                     <p class="prof" lang="en">Marketing</p>
@@ -290,7 +319,18 @@
                   </div>
                 </li>
                 <li class="people-card">
-                    <img src="./images/photo-mobile/person4-mobile-450.jpg" alt="Михаил Ермаков">
+                  <picture>
+
+                    <source srcset="./images/photo-mobile/person4-mobile-450.webp 1x,
+                                    ./images/photo-mobile/person4-mobile-450@2x.webp 2x" 
+                                    media="(max-width:767px"
+                                    type="image/webp" />
+
+                    <source srcset="./images/photo-mobile/person4-mobile-450.jpg 1x, 
+                                    ./images/photo-mobile/person4-mobile-450@2x.jpg 2x"
+                                     media="(max-width: 767px)" />
+                    <img src="./images/photo-mobile/person4-mobile-450.jpg" alt="Михаил Ермаков" />
+                    </picture>
                   <div class="people-name">
                     <h3 class="name">Михаил Ермаков</h3>
                     <p class="prof" lang="en">UI Designer</p>

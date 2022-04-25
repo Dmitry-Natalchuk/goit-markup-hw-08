@@ -4,23 +4,22 @@
     border-color: #eeeeee;
     height: 60px;
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $tablet) {
         height: 80px;
     }
 }
 .header__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
     @media screen and (max-width: $max-mobile) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding-top: 16px;
     }
-
-
+    @media screen and (min-width:$tablet) {
+        padding-top: 21px; 
+    }
     @media screen and (min-width: $desktop) {
-        display: flex;
-        align-items: center;
     }
 }
 
