@@ -1073,6 +1073,13 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .people-card {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .people-card:not(:last-child) {
     margin-right: 30px;
@@ -1128,6 +1135,14 @@ ul {
   font-size: 16px;
   line-height: 1.2;
   color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .people-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .group {
@@ -1207,6 +1222,9 @@ ul {
 }
 
 .client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 210px;
   height: 92px;
   border: 1px solid;
@@ -1219,6 +1237,12 @@ ul {
 
 .client:focus, .client:hover {
   border-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .client {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 @media screen and (min-width: 1200px) {

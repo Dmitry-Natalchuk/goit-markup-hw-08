@@ -76,6 +76,9 @@
 }
 
 .client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 210px;
     height: 92px;
     border: 1px solid;
@@ -91,6 +94,11 @@
     &:hover{
         border-color: var(--accent-color);
     }
+
+     @media screen and (min-width: $tablet){
+        flex-basis: calc(100% / 3 - 30px);
+
+     }
 
       @media screen and (min-width: $desktop) {
     &:not(:last-child) {
