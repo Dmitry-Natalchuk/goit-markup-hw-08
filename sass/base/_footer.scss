@@ -1,8 +1,5 @@
 .footer .container {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-
 
     @media screen and (min-width: $desktop) {
        display: flex;
@@ -171,4 +168,19 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #ffffff;
+}
+@media screen and (min-width:$tablet) {
+    .footer-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .footer-icon{
+        margin-top: 60px;
+    }
+    .footer-input{
+        max-width:450px;
+    }
+    
 }
