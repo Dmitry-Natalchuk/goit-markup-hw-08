@@ -129,3 +129,15 @@
 
 
 }
+@media screen and (min-width:$tablet) {
+    .portfolio-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    .img-list{
+        flex-basis: calc(100% / 2 - 30px);
+        margin: 15px;
+    }
+    
+}
