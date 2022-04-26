@@ -376,6 +376,12 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-width: 768px) {
+  .footer-input {
+    max-width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-input {
     width: 358px;
@@ -446,12 +452,14 @@ ul {
 @media screen and (min-width: 768px) {
   .footer-box {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
   }
-  .footer-input {
-    max-width: 450px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    margin-right: 93px;
   }
 }
 
