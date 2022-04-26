@@ -51,8 +51,14 @@
     @media screen and (min-width: $desktop) {
        display: flex;
        align-items: center;
-       margin-right: 50px;
     }
+}
+
+@media screen and (min-width:$desktop) {
+    .header__link:not(:last-child){
+        margin-right: 30px;
+    }
+    
 }
 
 .header__icon {
