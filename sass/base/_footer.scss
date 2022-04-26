@@ -1,5 +1,8 @@
 .footer .container {
+
+    @media screen and (max-width: $max-tablet){
     text-align: center;
+    }
 
     @media screen and (min-width: $desktop) {
        display: flex;
@@ -60,26 +63,22 @@
 }
 
 .footer-icon {
-    @media screen and (max-width:$max-mobile) {
-        padding-top: 60px;
+
+    @media screen and (max-width:$max-tablet) {
+        margin-top: 60px;
      }
-
-
-    @media screen and (min-width: $desktop) {
-        margin-right: 93px;
-    }
 }
 
 .footer-form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
     margin-top: 20px;
 
+    @media screen and (max-width:$max-tablet) {
+        flex-direction: column;
+        align-items: center;  
+    }
+
     @media screen and (min-width: $desktop) {
-        display: flex;
-        align-items: center;
     }
 
 
@@ -100,6 +99,10 @@
     &:focus,
     &:hover{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    @media screen and (min-width:$tablet){
+        max-width:450px;
     }
 
     @media screen and (min-width:$desktop) {
@@ -169,18 +172,16 @@
     text-transform: uppercase;
     color: #ffffff;
 }
-@media screen and (min-width:$tablet) {
-    .footer-box{
+
+.footer-box {
+    @media screen and (min-width:$tablet) {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
         align-items: baseline;
     }
-    .footer-icon{
-        margin-top: 60px;
-    }
-    .footer-input{
-        max-width:450px;
-    }
-    
+
+    @media screen and (min-width:$desctop) {
+        flex-wrap: nowrap;
+        margin-right: 93px;
+    }  
 }

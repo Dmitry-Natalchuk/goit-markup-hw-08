@@ -76,8 +76,10 @@
     margin: -15px;
 
     @media screen and (min-width: $desktop) {
-        display: flex;
+        flex-wrap: nowrap;
     }
+
+
 }
 
 .client {
@@ -105,11 +107,6 @@
 
      }
 
-      @media screen and (min-width: $desktop) {
-    &:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
 }
 
 .clients-icon {
