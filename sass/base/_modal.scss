@@ -158,6 +158,10 @@
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     font-size: 12px;
+
+    @media screen and(min-width:$desktop) {
+        font-size: 14px;
+    }
 }
 
 .contract-chek {

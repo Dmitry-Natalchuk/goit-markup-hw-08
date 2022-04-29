@@ -643,6 +643,12 @@ ul {
   font-size: 12px;
 }
 
+@media screen and (min-width: 1200px) {
+  .checkbox-modal {
+    font-size: 14px;
+  }
+}
+
 .contract-chek {
   display: inline-block;
 }
